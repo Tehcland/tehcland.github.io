@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Vision of New Edan</title>
+  <title>Vision: The New Edan</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -18,81 +18,88 @@ body {
   background-position: center center;
   background-attachment: fixed;
   color: white;
-  height: 100vh;
+}
+.hero {
+  background-color: rgba(0,0,0,0.65);
+  padding: 4em 2em;
   text-align: center;
-  padding-top: 80px;
 }
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  padding: 1em 0;
-  z-index: 1000;
+.subtitle {
+  font-size: 1.2em;
+  margin-top: 0.5em;
 }
-.navbar a {
+.button {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.8em 1.5em;
+  background-color: #00b894;
   color: white;
-  text-decoration: none;
-  margin: 0 1.5em;
   font-weight: bold;
-  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
 }
-.navbar a:hover {
-  text-decoration: underline;
-}
-.overlay {
-  background-color: rgba(0, 0, 0, 0.55);
-  padding: 3em;
-  margin: auto;
+.highlight {
+  background-color: rgba(0,0,0,0.6);
+  padding: 2em;
+  margin: 2em auto;
+  max-width: 900px;
   border-radius: 10px;
-  max-width: 700px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+}
+.gallery img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
 }
 form {
   display: flex;
   flex-direction: column;
-  margin-top: 1em;
+  gap: 1em;
 }
 input, textarea {
-  margin: 0.5em 0;
   padding: 1em;
-  border: none;
-  border-radius: 6px;
   font-size: 1em;
+  border-radius: 8px;
+  border: none;
 }
 button {
-  padding: 1em;
-  background-color: #2f8048;
-  border: none;
+  background-color: #0984e3;
   color: white;
   font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
+  padding: 1em;
+  border: none;
+  border-radius: 8px;
 }
-button:hover {
-  background-color: #256339;
+footer {
+  text-align: center;
+  padding: 2em;
+  background-color: rgba(0,0,0,0.7);
+  font-size: 0.9em;
+}
+a {
+  color: #00cec9;
 }
 
   </style>
 </head>
 <body>
-  
-<div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="grants.html">Grants</a>
-  <a href="vision.html">Vision</a>
-  <a href="contact.html">Contact</a>
-</div>
 
-  
-      <div class="overlay">
-        <h1>Our Vision: New Edan</h1>
-        <p>We imagine a living model of co-existence: a nature-forward eco-village concept powered by river flow, supported by empathy, and stewarded by community. This is not utopia — it’s prototype.</p>
-        <p>New Edan is a beacon of what's possible when innovation, indigenous knowledge, and ecological integrity unite under one purpose: healing.</p>
-      </div>
+<header class="hero">
+  <h1>The Vision of TEHCLAND</h1>
+  <p class="subtitle">A peaceful, off-grid sanctuary built on truth, ecology, and autonomy.</p>
+</header>
+<section class="highlight">
+  <h2>Introducing New Edan</h2>
+  <p>“New Edan” is more than a project — it’s a prototype for how humans and nature can coexist without exploitation. Using renewable energy, land trust models, and conflict-free culture, TEHCLAND shows a new way forward.</p>
+</section>
+<footer><p>&copy; 2025 TEHCLAND | <a href="index.html">Home</a></p></footer>
         
 </body>
 </html>

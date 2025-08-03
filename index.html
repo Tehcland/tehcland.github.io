@@ -3,48 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome</title>
+  <title>Welcome to TEHCLAND</title>
   <style>
-    body {
+    body {{
       font-family: 'Segoe UI', sans-serif;
-      background: #f2f2f2;
       margin: 0;
-      padding: 2em;
-      color: #333;
-    }
-    header {
-      background: #004225;
+      padding: 0;
+      background: url('healing_retreat_scene.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: white;
-      padding: 1em;
       text-align: center;
-    }
-    nav a {
-      margin: 0 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      backdrop-filter: brightness(0.7);
+    }}
+    h1 {{
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }}
+    p {{
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 2em;
+      line-height: 1.5;
+    }}
+    a {{
+      display: inline-block;
+      padding: 1em 2em;
+      background-color: #3a6f41;
+      color: white;
       text-decoration: none;
-      color: #ddd;
-    }
-    nav a:hover {
-      color: #fff;
-    }
-    main {
-      margin-top: 2em;
-    }
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }}
+    a:hover {{
+      background-color: #2c5634;
+    }}
   </style>
 </head>
 <body>
-  <header>
-    <h1>TEHCLAND</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="grants.html">Grants</a>
-      <a href="vision.html">Vision</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Welcome</h2>
-    <p>This is the welcome page. Real content will be added soon.</p>
-  </main>
+  <h1>Welcome to TEHCLAND</h1>
+  <p>
+    A nature-first, mind-forward project in Ontario — reviving rivers, protecting species, and nurturing a new way of living in harmony with the Earth.  
+    You are entering a living vision powered by community, ecology, and hope.
+  </p>
+  <a href="about.html">Enter the Site</a>
 </body>
 </html>

@@ -4,33 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome to TEHCLAND</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
-    body {{
-      font-family: 'Segoe UI', sans-serif;
+    
+    body {
       margin: 0;
       padding: 0;
+      font-family: 'Poppins', sans-serif;
       background: url('healing_retreat_scene.jpg') no-repeat center center fixed;
       background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: white;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100vh;
-      backdrop-filter: brightness(0.7);
-    }}
-    h1 {{
-      font-size: 3em;
-      margin-bottom: 0.5em;
-    }}
-    p {{
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: 0 auto 2em;
-      line-height: 1.5;
-    }}
-    a {{
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 3em;
+      border-radius: 12px;
+    }
+    .button {
       display: inline-block;
+      margin-top: 2em;
       padding: 1em 2em;
       background-color: #3a6f41;
       color: white;
@@ -38,18 +35,20 @@
       font-weight: bold;
       border-radius: 8px;
       transition: background-color 0.3s;
-    }}
-    a:hover {{
+    }
+    .button:hover {
       background-color: #2c5634;
-    }}
+    }
+        
   </style>
 </head>
 <body>
-  <h1>Welcome to TEHCLAND</h1>
-  <p>
-    A nature-first, mind-forward project in Ontario — reviving rivers, protecting species, and nurturing a new way of living in harmony with the Earth.  
-    You are entering a living vision powered by community, ecology, and hope.
-  </p>
-  <a href="about.html">Enter the Site</a>
+  
+    <div class="overlay">
+      <h1>Welcome to TEHCLAND</h1>
+      <p>A living sanctuary for people and planet — healing land, restoring species, empowering minds.</p>
+      <a href="about.html" class="button">Enter the Site</a>
+    </div>
+    
 </body>
 </html>

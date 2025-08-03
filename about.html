@@ -4,61 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About TEHCLAND</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #222;
+      background-image: url('native_forest_restoration.jpg');
     }
-    header {
-      background-color: #004225;
-      color: white;
-      padding: 1em;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 1em;
-      color: white;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      padding: 2em;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-bottom: 1em;
-    }
+    
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 3em;
+    border-radius: 10px;
+    max-width: 700px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+  }
+  input, textarea {
+    margin: 0.5em 0;
+    padding: 1em;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+  }
+  button {
+    padding: 1em;
+    background-color: #2f8048;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #256339;
+  }
+
   </style>
 </head>
 <body>
-  <header>
-    <h1>About TEHCLAND</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="grants.html">Grants</a>
-      <a href="vision.html">Vision</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <img src="native_forest_restoration.jpg" alt="Forest Restoration">
-    <p>
-      TEHCLAND is a peaceful environmental restoration initiative rooted in the belief that healing land heals people. Located in Ontario, Canada, this site is more than just a parcel of land — it’s a living canvas of renewal, empathy, and self-sufficiency.
-    </p>
-    <p>
-      Our mission is to restore the land to its natural, thriving state, providing a sanctuary for native species and a safe space for human reconnection. From removing invasive species to supporting mental wellness through nature therapy, TEHCLAND is a living demonstration of what’s possible when community and ecology align.
-    </p>
-    <p>
-      TEHCLAND operates as a collaborative platform where environmental integrity meets emotional intelligence. We work hand-in-hand with scientists, volunteers, artists, and change-makers — all united in one vision: harmony through restoration.
-    </p>
-  </main>
+  
+    <div class="overlay">
+      <h1>Our Mission</h1>
+      <p>TEHCLAND exists to restore native ecosystems and create safe, healing spaces for people, animals, and the planet. We are building regenerative infrastructure and partnerships that respect land and life.</p>
+    </div>
+    
 </body>
 </html>

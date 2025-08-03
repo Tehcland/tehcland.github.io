@@ -3,29 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TEHCLAND</title>
+  <title>About TEHCLAND</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: url('native_forest_restoration.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      flex-direction: column;
-    }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.55);
-      padding: 3em;
-      border-radius: 10px;
-      max-width: 700px;
+      background-image: url('native_forest_restoration.jpg');
     }
     
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+  height: 100vh;
+  text-align: center;
+  padding-top: 80px;
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -47,8 +43,36 @@
 .navbar a:hover {
   text-decoration: underline;
 }
-body {
-  padding-top: 60px; /* Offset for navbar height */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 3em;
+  margin: auto;
+  border-radius: 10px;
+  max-width: 700px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+input, textarea {
+  margin: 0.5em 0;
+  padding: 1em;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+}
+button {
+  padding: 1em;
+  background-color: #2f8048;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #256339;
 }
 
   </style>
@@ -64,10 +88,11 @@ body {
 </div>
 
   
-    <div class="overlay">
-      <h1>About</h1>
-      <p>Explore the about page.</p>
-    </div>
-    
+      <div class="overlay">
+        <h1>What is TEHCLAND?</h1>
+        <p>TEHCLAND is a land-based project in Ontario that combines conservation, mental health, indigenous respect, and clean energy. Located on floodplain-protected land, it is not for residential development but for healing, education, and ecological renewal.</p>
+        <p>It is powered by off-grid hydroelectric energy and built to demonstrate how humans and ecosystems can thrive together — free of battery waste, concrete sprawl, and environmental harm.</p>
+      </div>
+        
 </body>
 </html>

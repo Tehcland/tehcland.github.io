@@ -87,9 +87,41 @@ a {
   color: #00cec9;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1em;
+  z-index: 1000;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1.5em;
+  font-weight: bold;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+body {
+  padding-top: 80px;
+}
+
   </style>
 </head>
 <body>
+
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="grants.html">Grants</a>
+  <a href="vision.html">Vision</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
 
 <header class="hero">
   <h1>About TEHCLAND</h1>

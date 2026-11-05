@@ -42,6 +42,7 @@ Reports and screenshots go to ignored `review/` by default. Set `REVIEW_DIR` to 
 - Contact currently has no submission form or verified public enquiry address. GitHub is linked for project information. Confirm a contact channel before offering enquiries.
 - Existing photographs illustrate themes, not verified TEHCLAND locations, facilities, or completed work. Original files remain unchanged. Building imagery and watermarked energy/stream imagery are not displayed.
 - Optimized WebP images derive from `healing_retreat_scene.jpg` (river), `pollinator_garden.jpg` (pollinator), and `native_forest_restoration.jpg` (landscape card). Some originals contain AVIF data despite their `.jpg` filenames; derivatives have matching encoding and extensions.
+- Sonara is a homepage music-and-visuals section using the two user-supplied images unchanged. The Suno link opens the public artist page; this website does not host an audio player. No unverified meaning or acronym expansion for Sonara is asserted.
 - The Ontario conservation resource is a tax incentive, not a general project grant. Linking to a programme does not establish eligibility or participation.
 
 ## Review and release

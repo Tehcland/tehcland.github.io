@@ -52,3 +52,13 @@ The homepage and About page connect native planting, pollinator habitat, waterwa
 “Get involved” is removed throughout. Main calls to action now open project or partnership priorities. Navigation says Contact, whose page states enquiries are unavailable and offers a useful route back to the proposals. GitHub is explicitly the website source and history, not an enquiry inbox. Tests exercise the new contact-page destination and guard against reintroducing unsupported invitations.
 
 Updated desktop/mobile screenshots and raw browser/Lighthouse results are in the local review package's refinement section. These refinements remain in draft PR #1; they do not authorize release.
+
+## Sonara artwork and approved release
+
+Ihor subsequently explicitly approved adding the two supplied images and publishing this website revision. A Sonara music-and-visuals section has been added to the existing homepage, with Music navigation across the five pages and a link to the verified public TEHCLAND artist page on Suno. No new project, player backend, paid service, or DNS change is included.
+
+The supplied emblem and eye/seedpod artwork are preserved unchanged. The detailed emblem is displayed at artwork size while the simpler site header remains readable on mobile. Relevant wording is repeated as HTML rather than relying on small lettering embedded in the images. The eye/seedpod image is described as surreal artwork and an open interpretation prompt, not a psychological test or documentary habitat photograph. No historical meaning or acronym expansion for Sonara was found in the checked records, and none is asserted.
+
+A visual scale check rendered the same emblem at 32, 48, 96, 240, and 400 CSS pixels. Fine lettering and rays become indistinct at small sizes; this supports using it as section artwork rather than a full header lockup. The supplied tagline appears to omit a letter in “Regeneration”; the HTML caption spells it correctly while retaining the original image. A future simplified mark and corrected source artwork would improve small-format use. This is a design/legibility assessment, not an audience study or a claim of measured brand preference.
+
+The final pre-release run passed all 31 browser checks, HTML validation, and formatting. Desktop/mobile axe scans reported no violations; Lighthouse scores remain as shown above, with zero measured layout shift. Both supplied image hashes match their originals. Publication must be verified independently against the deployed Pages revision after merging.

@@ -1,137 +1,276 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vision: The New Edan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-image: url('waterway_protection.jpg');
-    }
-    
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  color: white;
-}
-.hero {
-  background-color: rgba(0,0,0,0.65);
-  padding: 4em 2em;
-  text-align: center;
-}
-.subtitle {
-  font-size: 1.2em;
-  margin-top: 0.5em;
-}
-.button {
-  display: inline-block;
-  margin-top: 1em;
-  padding: 0.8em 1.5em;
-  background-color: #00b894;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-}
-.highlight {
-  background-color: rgba(0,0,0,0.6);
-  padding: 2em;
-  margin: 2em auto;
-  max-width: 900px;
-  border-radius: 10px;
-}
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1em;
-  padding: 1em;
-}
-.gallery img {
-  width: 250px;
-  height: auto;
-  border-radius: 10px;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-input, textarea {
-  padding: 1em;
-  font-size: 1em;
-  border-radius: 8px;
-  border: none;
-}
-button {
-  background-color: #0984e3;
-  color: white;
-  font-weight: bold;
-  padding: 1em;
-  border: none;
-  border-radius: 8px;
-}
-footer {
-  text-align: center;
-  padding: 2em;
-  background-color: rgba(0,0,0,0.7);
-  font-size: 0.9em;
-}
-a {
-  color: #00cec9;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.85);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 1em;
-  z-index: 1000;
-}
-.navbar a {
-  color: white;
-  text-decoration: none;
-  margin: 0 1.5em;
-  font-weight: bold;
-}
-.navbar a:hover {
-  text-decoration: underline;
-}
-body {
-  padding-top: 80px;
-}
-
-  </style>
-</head>
-<body>
-
-<nav class="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="grants.html">Grants</a>
-  <a href="vision.html">Vision</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-
-<header class="hero">
-  <h1>The Vision of TEHCLAND</h1>
-  <p class="subtitle">A peaceful, off-grid sanctuary built on truth, ecology, and autonomy.</p>
-</header>
-<section class="highlight">
-  <h2>Introducing New Edan</h2>
-  <p>“New Edan” is more than a project — it’s a prototype for how humans and nature can coexist without exploitation. Using renewable energy, land trust models, and conflict-free culture, TEHCLAND shows a new way forward.</p>
-</section>
-<footer><p>&copy; 2025 TEHCLAND | <a href="index.html">Home</a></p></footer>
-        
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#183d32" />
+    <meta
+      name="description"
+      content="Explore TEHCLAND’s proposed restoration, education, inclusive community, and renewable micro-hydro ideas, with clear distinctions between plans and operations."
+    />
+    <title>Our vision: New Edan | TEHCLAND</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/navigation.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html"
+          ><svg
+            viewBox="0 0 40 48"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path
+              d="M20 44V18M20 32C6 33 3 22 4 12c13 0 20 8 16 20ZM20 25C19 13 28 7 37 8c0 11-6 19-17 17Z"
+            />
+            <path d="m11 21 9 11m9-16-9 9" /></svg
+          ><span class="brand-name"
+            >TEHCLAND<span class="brand-sub"
+              >NATURE. LEARNING. BELONGING.</span
+            ></span
+          ></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-navigation"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            aria-hidden="true"
+          >
+            <path d="M4 7h16M4 12h16M4 17h16" /></svg
+          ><span>Menu</span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="vision.html" aria-current="page">Our vision</a
+          ><a href="grants.html">Partnerships</a
+          ><a href="contact.html" class="nav-contact"
+            >Get involved<svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M4 12h15m-6-6 6 6-6 6" /></svg
+          ></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <div class="wrap page-intro">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span aria-hidden="true">/</span
+          ><span aria-current="page">Our vision</span>
+        </nav>
+        <p class="eyebrow">New Edan · A vision for the future</p>
+        <h1>Imagine a different<br />way to <em>grow together.</em></h1>
+        <p class="lede">
+          “New Edan” is TEHCLAND’s long-term vision for ecological stewardship,
+          nature-based learning, and community connection. It is an aspiration,
+          not a completed destination.
+        </p>
+      </div>
+      <figure class="wrap page-image">
+        <img
+          src="assets/images/river-evening-1280.webp"
+          srcset="
+            assets/images/river-evening-640.webp   640w,
+            assets/images/river-evening-1280.webp 1280w
+          "
+          sizes="100vw"
+          width="1280"
+          height="853"
+          alt="A river surrounded by wooded shores at sunset"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        />
+        <figcaption>
+          Illustrative nature imagery; not evidence of a TEHCLAND site or
+          infrastructure.
+        </figcaption>
+      </figure>
+      <section
+        class="wrap section reading-grid"
+        aria-labelledby="vision-priorities"
+      >
+        <div>
+          <p class="eyebrow">The possibilities</p>
+          <h2 id="vision-priorities" style="margin-top: 22px">
+            A living vision,<br />grounded in care.
+          </h2>
+        </div>
+        <div>
+          <ol class="principle-list">
+            <li id="restoration">
+              <span class="number">01</span>
+              <div>
+                <h3>Restore native habitats.</h3>
+                <p>
+                  Explore native planting, pollinator gardens, and waterway
+                  stewardship informed by ecological needs and local conditions.
+                </p>
+              </div>
+            </li>
+            <li id="learning">
+              <span class="number">02</span>
+              <div>
+                <h3>Learn through experience.</h3>
+                <p>
+                  Envision outdoor education, practical restoration skills, and
+                  opportunities to understand how healthy ecosystems work. No
+                  scheduled programmes are offered through this website.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="number">03</span>
+              <div>
+                <h3>Create room to belong.</h3>
+                <p>
+                  Consider calm, inclusive ways to connect with nature, with
+                  neurodiverse participants and varied accessibility needs in
+                  mind. Retreat spaces remain a future possibility.
+                </p>
+              </div>
+            </li>
+            <li id="energy">
+              <span class="number">04</span>
+              <div>
+                <h3>Explore renewable micro-hydro.</h3>
+                <p>
+                  Investigate whether small-scale renewable generation could
+                  suit the project. Micro-hydro and battery storage are
+                  compatible; storage may help balance generation and demand.
+                </p>
+                <p>
+                  This is exploratory. No operating installation, generation
+                  capacity, or approved design is confirmed. Feasibility, water
+                  flows, habitat impacts, land-use requirements, and applicable
+                  permits would need assessment before any work.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="soft-section section">
+        <div class="wrap reading-grid">
+          <div>
+            <p class="eyebrow">How we hope to grow</p>
+            <h2 style="margin-top: 22px">
+              Stewardship before<br /><em>infrastructure.</em>
+            </h2>
+          </div>
+          <div class="reading-copy">
+            <p>
+              Good intentions need careful groundwork. Our approach is to
+              understand ecological conditions, seek appropriate expertise,
+              consider accessibility, and investigate the requirements of any
+              proposed activity.
+            </p>
+            <div class="notebook">
+              <h3>A clear distinction</h3>
+              <p>
+                Ideas on this page are not claims of completed construction,
+                secured permits, established land trusts, or operating
+                facilities. Partnerships and funding would support investigation
+                and development, rather than certify these outcomes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div style="height: 65px" aria-hidden="true"></div>
+      <div class="wrap">
+        <section class="join-panel" aria-label="Get involved">
+          <div>
+            <h2>Help shape what<br />comes next.</h2>
+            <p>
+              Explore the project’s priorities and the kinds of collaboration we
+              hope to build.
+            </p>
+          </div>
+          <a class="button button-light" href="contact.html"
+            >Get involved<svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M4 12h15m-6-6 6 6-6 6" /></svg
+          ></a>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-main">
+          <div class="footer-intro">
+            <a class="brand" href="index.html"
+              ><svg
+                viewBox="0 0 40 48"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20 44V18M20 32C6 33 3 22 4 12c13 0 20 8 16 20ZM20 25C19 13 28 7 37 8c0 11-6 19-17 17Z"
+                />
+                <path d="m11 21 9 11m9-16-9 9" /></svg
+              ><span class="brand-name"
+                >TEHCLAND<span class="brand-sub"
+                  >NATURE. LEARNING. BELONGING.</span
+                ></span
+              ></a
+            >
+            <p>
+              A vision for healthier ecosystems, shared learning, and a deeper
+              connection to nature in Ontario, Canada.
+            </p>
+          </div>
+          <div>
+            <h2 class="footer-heading">Explore the project</h2>
+            <nav class="footer-links" aria-label="Footer navigation">
+              <a href="about.html">About</a><a href="vision.html">Our vision</a
+              ><a href="grants.html">Partnerships</a
+              ><a href="contact.html">Get involved</a>
+            </nav>
+          </div>
+          <div>
+            <h2 class="footer-heading">Growing thoughtfully</h2>
+            <p class="footer-note">
+              TEHCLAND is a developing project. Activities and facilities
+              described as proposed are aspirations, not currently available
+              services.
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2025–2026 TEHCLAND · Ontario, Canada</span
+          ><span>Rooted in nature. Open to possibility.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

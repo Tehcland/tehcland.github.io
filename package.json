@@ -1,0 +1,24 @@
+{
+  "name": "tehcland-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TEHCLAND static GitHub Pages website. Development tools only; no production dependencies.",
+  "scripts": {
+    "preview": "node scripts/preview.mjs",
+    "test": "node scripts/verify.mjs",
+    "check:html": "html-validate '*.html'",
+    "check:format": "prettier --check '*.html' 'assets/*.{css,js,svg}' 'scripts/*.mjs' '*.json' '*.md'",
+    "test:performance": "node scripts/performance.mjs"
+  },
+  "devDependencies": {
+    "axe-core": "4.14.0",
+    "chrome-launcher": "1.2.2",
+    "html-validate": "11.18.0",
+    "lighthouse": "13.6.0",
+    "playwright": "1.64.1",
+    "prettier": "3.9.10"
+  },
+  "engines": {
+    "node": ">=24.8.0"
+  }
+}

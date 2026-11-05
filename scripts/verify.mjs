@@ -287,7 +287,7 @@ try {
       );
       assert.equal(
         await page
-          .getByRole("link", { name: "View the project on GitHub" })
+          .getByRole("link", { name: "Website source on GitHub" })
           .getAttribute("href"),
         "https://github.com/Tehcland/tehcland.github.io",
       );
@@ -295,9 +295,21 @@ try {
         await page.goto(`${preview.url}/${slug}.html`);
         assert.doesNotMatch(
           await page.locator("body").innerText(),
-          /battery[\s-]?free|generates electricity|nonprofit prototype|we work with local government|actively applying/i,
+          /battery[\s-]?free|generates electricity|nonprofit prototype|we work with local government|actively applying|Get involved|Est\. 2025/i,
         );
+        const invitations = page.locator(".join-panel a");
+        if (await invitations.count()) {
+          assert.notEqual(
+            await invitations.first().getAttribute("href"),
+            "contact.html",
+          );
+        }
       }
+      await page.goto(`${preview.url}/contact.html`);
+      await page
+        .getByRole("link", { name: "Read the project priorities", exact: true })
+        .click();
+      await page.waitForURL("**/vision.html");
       await page.goto(`${preview.url}/vision.html`);
       assert.match(
         await page.locator("#energy").innerText(),
@@ -309,6 +321,38 @@ try {
         await page.locator("main").innerText(),
         /does not confirm any grant awards/,
       );
+    } finally {
+      await page.close();
+    }
+  });
+
+  await check("Mobile brand and menu remain readable on one row", async () => {
+    const page = await browser.newPage();
+    try {
+      for (const width of [320, 390, 480]) {
+        await page.setViewportSize({ width, height: 844 });
+        await page.goto(preview.url);
+        const brand = await page.locator(".header-inner .brand").boundingBox();
+        const menu = await page.locator(".menu-toggle").boundingBox();
+        assert.ok(
+          Math.abs(brand.y + brand.height / 2 - (menu.y + menu.height / 2)) < 2,
+          `Header wrapped at ${width}px`,
+        );
+        assert.ok(
+          await page
+            .locator(".header-inner .brand-name")
+            .evaluate(
+              (element) => parseFloat(getComputedStyle(element).fontSize) >= 24,
+            ),
+        );
+        assert.ok(
+          await page
+            .locator(".footer-intro .brand-sub")
+            .evaluate(
+              (element) => parseFloat(getComputedStyle(element).fontSize) >= 11,
+            ),
+        );
+      }
     } finally {
       await page.close();
     }

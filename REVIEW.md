@@ -37,6 +37,8 @@ The original GitHub project and federal resource returned HTTP 200. Ontario's ex
 
 ## Authorization and handoff
 
-The original remote is `https://github.com/Tehcland/tehcland.github.io.git`. The configured GitHub account has `pull: true` and `push: false` for this repository. A remote branch and PR cannot be created with that connection. No alternative repository or fork has been created.
+The original remote is `https://github.com/Tehcland/tehcland.github.io.git`. Repository write access and the ChatGPT Codex Connector installation have been authorized for this repository. No alternative repository or fork has been created.
 
-The local review package includes the branch bundle, a patch, screenshots, raw test evidence, and a prepared PR description. Once an authorized connection has write access to **Tehcland/tehcland.github.io**, push the existing branch and open a draft PR against `main`. Leave merging and publication for Ihor's approval.
+The branch is pushed as `redesign/ecological-community`. [Draft PR #1](https://github.com/Tehcland/tehcland.github.io/pull/1) targets `main` in the original repository. The local review package includes the branch bundle, a patch, screenshots, raw test evidence, and the PR description. Leave merging and publication for Ihor's approval.
+
+The tested website implementation is commit `b5c9f6d`; subsequent handoff documentation updates do not change the website or its runtime assets.
